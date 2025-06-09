@@ -17,18 +17,18 @@ npm install --save-dev vite-plugin-grid-overlay
 Add the plugin to your `vite.config.ts`:
 
 ```ts
-import { defineConfig } from 'vite'
-import gridOverlay from 'vite-plugin-grid-overlay'
+import { defineConfig } from "vite";
+import gridOverlay from "vite-plugin-grid-overlay";
 
 export default defineConfig({
   plugins: [
     gridOverlay({
-      gridColor: 'rgba(255,0,0,0.2)',
+      gridColor: "rgba(255,0,0,0.2)",
       gridSize: 20,
       zIndex: 9999,
     }),
   ],
-})
+});
 ```
 
 Press **Alt+g** during development to toggle the grid on and off.
@@ -44,6 +44,18 @@ pnpm dev
 
 # generate the final dist files
 pnpm build
+```
+
+### Local linking
+
+To test the plugin in another local project:
+
+```bash
+# from this repository
+npm link
+
+# inside your test project
+npm link vite-plugin-grid-overlay
 ```
 
 ## Options
