@@ -2,7 +2,7 @@
 
 A simple Vite plugin that injects a design grid overlay during development. Useful for aligning elements to a consistent grid when building layouts.
 
-## Installation
+## 🚀 Getting Started
 
 ```bash
 # with pnpm
@@ -12,28 +12,26 @@ pnpm add -D vite-plugin-grid-overlay
 npm install --save-dev vite-plugin-grid-overlay
 ```
 
-## Usage
-
 Add the plugin to your `vite.config.ts`:
 
 ```ts
-import { defineConfig } from "vite";
-import gridOverlay from "vite-plugin-grid-overlay";
+import { defineConfig } from 'vite'
+import gridOverlay from 'vite-plugin-grid-overlay'
 
 export default defineConfig({
   plugins: [
     gridOverlay({
-      gridColor: "rgba(255,0,0,0.2)",
+      gridColor: 'rgba(255,0,0,0.2)',
       gridSize: 20,
       zIndex: 9999,
     }),
   ],
-});
+})
 ```
 
-Press **Alt+g** during development to toggle the grid on and off.
+Press **`Alt + g`** during development to toggle the grid on and off.
 
-## Development
+## 🔨 Development
 
 This project uses [unbuild](https://github.com/unjs/unbuild) to compile the
 TypeScript source. Use the provided npm scripts during development:
@@ -46,19 +44,7 @@ pnpm dev
 pnpm build
 ```
 
-### Local linking
-
-To test the plugin in another local project:
-
-```bash
-# from this repository
-npm link
-
-# inside your test project
-npm link vite-plugin-grid-overlay
-```
-
-## Options
+## ⚙️ Options
 
 - `gridColor` – CSS color of the grid lines. Default `rgba(0,0,0,0.2)`.
 - `gridSize` – Size of each grid square in pixels. Default `20`.
