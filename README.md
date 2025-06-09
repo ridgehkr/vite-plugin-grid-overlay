@@ -44,6 +44,24 @@ pnpm dev
 pnpm build
 ```
 
+### Local linking
+
+If you want to try the plugin from a local checkout, use Node.js 20 or link it
+with `pnpm`. The `npm link` command from Node.js 24 sometimes fails with a
+`TypeError: Cannot read properties of null (reading 'matches')` error. As a
+workaround run:
+
+```bash
+pnpm link --global
+pnpm link --global ../vite-plugin-grid-overlay
+```
+
+Alternatively you can install directly from the file system:
+
+```bash
+npm install ../vite-plugin-grid-overlay
+```
+
 ## ⚙️ Options
 
 - `gridColor` – CSS color of the grid lines. Default `rgba(0,0,0,0.2)`.
