@@ -44,13 +44,35 @@ pnpm dev
 pnpm build
 ```
 
+### Example
+
+```ts
+import { defineConfig } from 'vite'
+import gridOverlay from 'vite-plugin-grid-overlay'
+
+export default defineConfig({
+  // … other Vite config options
+  plugins: [
+    gridOverlay({
+      gridColor: 'rgba(255,0,0,0.2)',
+      columns: 12,
+      columnWidth: 80,
+      totalWidth: 1200,
+      zIndex: 9999,
+    }),
+  ],
+})
+```
+
 ## ⚙️ Options
 
-- `gridColor` – CSS color of the grid lines. Default `rgba(0,0,0,0.2)`.
-- `gridSize` – Size of each grid square in pixels. Default `20`.
-- `zIndex` – z-index of the overlay element. Default `9999`.
-- `displayByDefault` – Whether the grid is visible initially. Default `true`.
-- `hotkey` – Key used with `Alt` to toggle the overlay. Default `'g'`.
+| Option        | Type   | Default             | Description                               |
+| ------------- | ------ | ------------------- | ----------------------------------------- |
+| `columns`     | number | `12`                | The number of columns in the grid         |
+| `columnWidth` | number | `80`                | The width of each grid column (in pixels) |
+| `totalWidth`  | number | `1200`              | The total width of the grid (in pixels)   |
+| `gridColor`   | string | `'rgba(0,0,0,0.2)'` | CSS color of the grid lines               |
+| `zIndex`      | number | `9999`              | z-index of the overlay element            |
 
 ## ✨ Contributing
 
