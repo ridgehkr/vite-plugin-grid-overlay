@@ -30,6 +30,19 @@ export default defineConfig({
 
 Press **Alt+g** during development to toggle the grid on and off.
 
+## Development
+
+This project uses [unbuild](https://github.com/unjs/unbuild) to compile the
+TypeScript source. Use the provided npm scripts during development:
+
+```bash
+# compile in watch mode
+pnpm dev
+
+# generate the final dist files
+pnpm build
+```
+
 ## Options
 
 - `gridColor` – CSS color of the grid lines. Default `rgba(0,0,0,0.2)`.

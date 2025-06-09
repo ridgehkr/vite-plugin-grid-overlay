@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "dev": "unbuild --stub",
+    "build": "unbuild",
     "test": "node -e \"console.log('No tests');\""
   },
   "keywords": [],
@@ -17,5 +18,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "devDependencies": {
+    "unbuild": "^1.0.0"
+  }
 }
