@@ -2,12 +2,20 @@
   "name": "vite-plugin-grid-overlay",
   "version": "1.0.0",
   "description": "Generate a grid overlay for your Vite project to help with design and layout.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "node -e \"console.log('No tests');\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.11.1"
+  "packageManager": "pnpm@10.11.1",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ]
 }
