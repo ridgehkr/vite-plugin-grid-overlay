@@ -1,5 +1,6 @@
-import type { Plugin } from 'vite';
-export interface GridOverlayOptions {
+import { Plugin } from 'vite';
+
+interface GridOverlayOptions {
     /** Color of the grid lines */
     gridColor?: string;
     /** Size of the grid cells in pixels */
@@ -11,4 +12,6 @@ export interface GridOverlayOptions {
     /** Hotkey letter to toggle grid using Alt+<key> */
     hotkey?: string;
 }
-export default function gridOverlayPlugin(options?: GridOverlayOptions): Plugin;
+declare function gridOverlayPlugin(options?: GridOverlayOptions): Plugin;
+
+export { GridOverlayOptions, gridOverlayPlugin as default };

@@ -2,24 +2,40 @@
   "name": "vite-plugin-grid-overlay",
   "version": "1.0.0",
   "description": "Generate a grid overlay for your Vite project to help with design and layout.",
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "dev": "unbuild --stub",
-    "build": "unbuild",
-    "test": "node -e \"console.log('No tests');\""
+    "build": "unbuild"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vite",
+    "plugin",
+    "grid",
+    "overlay",
+    "design",
+    "layout"
+  ],
+  "author": "Caleb Pierce - https://calebpierce.dev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridgehkr/vite-plugin-grid-overlay.git"
+  },
   "packageManager": "pnpm@10.11.1",
-  "exports": {
-    ".": "./dist/index.js"
-  },
   "files": [
     "dist"
   ],
   "devDependencies": {
     "unbuild": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0 || ^5.0.0 || ^6.0.0"
   }
 }
