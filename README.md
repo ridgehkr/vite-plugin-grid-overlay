@@ -93,6 +93,14 @@ If you encounter a bug or have a feature request, please [open an issue](https:/
 5. **Run Tests**: Ensure all tests (new and existing) pass locally before submitting your pull request.
 6. **Submit a Pull Request**: Open a [pull request](https://github.com/ridgehkr/vite-plugin-grid-overlay/pulls), providing a clear description of your changes and referencing any related issues.
 
+## 🚗 Roadmap
+
+These are potential future features for `vite-plugin-grid-overlay`. If you'd like to contribute one, just fork the repo to get started!
+
+- [ ] Add the ability to set overriding breakpoint settings
+- [ ] Route-specific display overrides
+- [ ] Display hotkey customization
+
 ## 🔗 Related
 
 - [Vite config](https://vite.dev/config/)
