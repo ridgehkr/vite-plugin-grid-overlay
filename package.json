@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-grid-overlay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a grid overlay for your Vite project to help with design and layout.",
   "exports": {
     ".": {

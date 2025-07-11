@@ -8,8 +8,8 @@ A simple Vite plugin that injects a design grid overlay during development. Usef
 # with pnpm
 pnpm add -D vite-plugin-grid-overlay
 
-# OR with npm
-npm install --save-dev vite-plugin-grid-overlay
+# or with npm
+npm install -D vite-plugin-grid-overlay
 ```
 
 Add the plugin to your `vite.config.ts`:
@@ -22,7 +22,9 @@ export default defineConfig({
   plugins: [
     gridOverlay({
       gridColor: 'rgba(255,0,0,0.2)',
-      gridSize: 20,
+      columns: 12,
+      columnWidth: 80,
+      totalWidth: 1280,
       zIndex: 9999,
     }),
   ],
